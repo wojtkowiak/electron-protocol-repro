@@ -17,6 +17,8 @@ import Squirrel from './squirrel';
 const { app, BrowserWindow, dialog } = electron;
 const { join } = path;
 
+process.env.METEOR_DESKTOP_NO_SPLASH_SCREEN = true;
+
 console.log('reg', electron.protocol.registerStandardSchemes(['meteor']));
 
 /**
